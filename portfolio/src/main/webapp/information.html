@@ -1,104 +1,128 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Thomas Pena</title>
-    <link rel="stylesheet" href="StyleMenu.css">
+    <link rel="stylesheet" href="StyleMenu.css" />
     <script src="script.js"></script>
-        
   </head>
 
+  <body>
+    <div class="projects">
+      <div id="socials">
+        <p>
+          <p1 style="color: black">Thomas Pena</p1>
+          <button onclick="onClickGithub()"><i class="fa fa-github"></i></button>
+          <button onclick="onClickLinkedin()"><i class="fa fa-linkedin"></i></button>
+        </p>
+      </div>
+      <h1 style="text-align: center; font-size: 30px">Projects</h1>
+      <p>
+        <a onclick="onClickProject1()" id="projects"
+          ><img src="/images/blackjack.jpg" class="picture1"
+        /></a>
+        <a onclick="onClickProject2()" id="projects"
+          ><img src="/images/house.jpg" class="picture2"
+        /></a>
+        <a onclick="onClickProject3()" id="projects"
+          ><img src="/images/blinds.jpg" class="picture3"
+        /></a>
+      </p>
 
-<body>
-<div class="projects">
- <div id="socials">
-    <p><p1 style="color:black">Thomas Pena</p1> 
-    <button onclick="github()"><i class="fa fa-github"></i></button>
-    <button onclick="linkedin()"><i class="fa fa-linkedin"></i></button>
-    </p>
- </div> 
-    <h1 style="text-align:center;font-size:30px;">Projects</h1> 
-    <p>  <a onclick="project1()" id="projects"><img src="/images/blackjack.jpg" class="picture1"/></a>
-        <a onclick="project2()" id="projects"><img src="/images/house.jpg" class="picture2"/></a>
-        <a onclick="project3()" id="projects"><img src="/images/blinds.jpg" class="picture3"/></a>        
-    </p>
-    
-    <div id="project1" style="display:none">       
-    <p>
-    Blackjack – Java: Simplified version of the game Blackjack<br>
-    •	Implemented random card drawing, calculation, state tracking, and console input systems<br>
-    •	Data types, console I/O, control structures, and libraries<br>
-    </div> 
-    </p>
-  <div id="project2" style="display:none">       
-   <p>
-        House Renovation – Python: Determined the number of boxes needed for my parent’s house renovation<br>
-        •	Calculated intelligently via final cost several other factors <br>
-            o	Area of the room, number of tiles per box, dimensions of each tile, and different brands
-    </p>
-    </div> 
-    <div id="project3" style="display:none">       
-    <p>
-    Automated Blinds – C++ | Arduino: Voice-controlled automated blinds
-    •	IoT project: Used Adafruit to create an open/close switch, with IFTTT platform 
-        implemented the trigger that changes the switch based on voice commands through Google Assistant 
+      <div id="project1" style="display: none">
+        <p>
+          Blackjack – Java: Simplified version of the game Blackjack<br />
+          • Implemented random card drawing, calculation, state tracking, and
+          console input systems<br />
+          • Data types, console I/O, control structures, and libraries<br />
+        </p>
+      </div>
 
-    </p>
-    </div> 
-</div> 
+      <div id="project2" style="display: none">
+        <p>
+          House Renovation – Python: Determined the number of boxes needed for
+          my parent’s house renovation<br />
+          • Calculated intelligently via final cost several other factors <br />
+          o Area of the room, number of tiles per box, dimensions of each tile,
+          and different brands
+        </p>
+      </div>
+      <div id="project3" style="display: none">
+        <p>
+          Automated Blinds – C++ | Arduino: Voice-controlled automated blinds •
+          IoT project: Used Adafruit to create an open/close switch, with IFTTT
+          platform implemented the trigger that changes the switch based on
+          voice commands through Google Assistant
+        </p>
+      </div>
+    </div>
 
-<div class="experience">
-    <h1 style="text-align:center;font-size:30px;">Experience</h1>   
-   <p>  <a onclick="experience1()" id="experience"><img src="/images/sitel.jpg" class="picture1" /></a> 
-        <a onclick="experience2()"id="experience"><img src="/images/santaFe.jpg" class="picture2"/></a>
-        <a onclick="experience3()" style="font-size: 350px;background-position: right top" id="experience"> +</a> 
-    </p>
+    <div class="experiences-container">
+      <h1 style="text-align: center; font-size: 30px">Experience</h1>
+      <p>
+        <a onclick="onClickExperience1()" id="experience"
+          ><img src="/images/sitel.jpg" class="picture1"
+        /></a>
+        <a onclick="onClickExperience2()" id="experience"
+          ><img src="/images/santaFe.jpg" class="picture2"
+        /></a>
+        <a
+          onclick="onClickExperience3()"
+          style="font-size: 350px; background-position: right top"
+          id="experience"
+        >
+          +</a
+        >
+      </p>
 
-    <div id="experience1" style="display:none">       
-    <p>
-    Sitel Group | Bogota, Colombia [13 weeks]						   	     2019
-	Bilingual call center agent as a representative of Just Energy Group Inc.
-        •Evaluated customer’s info to explore solutions while maintaining high-quality service
-        •Inbound calls sales team: Promoted products and services to customers during calls
+      <div id="experience1" style="display: none">
+        <p>
+          Sitel Group | Bogota, Colombia [13 weeks] 2019 Bilingual call center
+          agent as a representative of Just Energy Group Inc. •Evaluated
+          customer’s info to explore solutions while maintaining high-quality
+          service •Inbound calls sales team: Promoted products and services to
+          customers during calls
+        </p>
+      </div>
+      <div id="experience2" style="display: none">
+        <p>
+          Santa Fe College | Gainesville, FL Summer 2019 – Summer 2020 Math
+          Tutor •College Reading & Learning Association (CRLA) Level 1 certified
+          tutor •Collaborated with students from various math courses •Assisted
+          students to create studying strategies while supporting them with
+          classwork
+        </p>
+      </div>
+      <div id="experience3" style="display: none">
+        <p>Help me gain experience!</p>
+      </div>
+    </div>
 
-    </p>
-    </div> 
-    <div id="experience2" style="display:none">       
-    <p>
-    Santa Fe College | Gainesville, FL 				      	   Summer 2019 – Summer 2020
-    Math Tutor
-        •College Reading & Learning Association (CRLA) Level 1 certified tutor
-        •Collaborated with students from various math courses
-        •Assisted students to create studying strategies while supporting them with classwork
-    </p>
-    </div> 
-        <div id="experience3" style="display:none">       
-    <p>
-    Help me gain experience! 
-    </p>
-    </div>        
+    <div class="about">
+      <h1 style="text-align: center; font-size: 30px">About</h1>
+      <h2 style="text-align: left center">Thomas Pena</h2>
+      <a>
+        <p style="right: 25px; position: absolute; font-size: 30px">
+          [super cool description goes here] University of Florida UF College of
+          Engineering in Gainesville, FL Graduation: May 2023<br />
+          Bachelor of Science: Computer Science<br />
+          Society of Hispanic Professional Engineers (SHPE UF)<br />
+          Triathlon Club at the University of Florida
+        </p>
+        <img src="/images/Pena, Thomas.jpg" class="profile" />
+      </a>
+    </div>
 
-</div>
-
-<div class="about">
-    <h1 style="text-align:center;font-size:30px;">About</h1>
-    <h2 style="text-align:left center">Thomas Pena </h2>     
-    <a>
-    <p style="right:25px; position: absolute;font-size:30px">
-    [super cool description goes here]
-    University of Florida UF College of Engineering in Gainesville, FL Graduation: May 2023<br>
-    Bachelor of Science: Computer Science<br>
-    Society of Hispanic Professional Engineers (SHPE UF)<br>
-    Triathlon Club at the University of Florida</p> 
-    <img src="/images/Pena, Thomas.jpg" class="profile"/>    
-    </a>
-</div>
-
-<div class="blog">
-    <h1 style="text-align:center;font-size:30px;color:whitesmoke">Blog</h1>  
-     <textarea>
+    <div class="blog">
+      <h1 style="text-align: center; font-size: 30px; color: whitesmoke">
+        Blog
+      </h1>
+      <textarea>
     Welcome to my Blog :)
 
     Today I have a challenge for you. 
@@ -120,13 +144,17 @@
             }
         return second;
         }
-  </textarea>
-  <div>
-     <button onclick="solution()">solution</button> 
-    <a id="solution" style="display:none;" >       
-    <img src="/images/solution.JPG" style="background-position: right top"/>
-    </a>  
-  </div>
-</div>
-</body>
+  </textarea
+      >
+      <div>
+        <button onclick="onClickShowBlogSolution()">solution</button>
+        <a id="blog-solution" style="display: none">
+          <img
+            src="/images/blogChallengeSolution.JPG"
+            style="background-position: right top"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
