@@ -1,41 +1,49 @@
-body{
-    background: whitesmoke;
-
+#experience{
+    border: none;
 }
+
+#projects{
+    border: none;
+}
+
 #socials {
   margin:0;
   color: #dbd8d8;
 }
-.projects {
-  background: #a8a7a75e;
-  background-size: cover;
-  height: 600px;
-  position: relative;
-}
-#projects{
-    border: none;
-}
-.experience {
-    background: rgba(117, 117, 116, 0.623);
-  background-size: cover;
-  height: 600px;
-  position: relative;
-}
-#experience{
-    border: none;
-}
+
 .about {
   background: rgba(8, 8, 8, 0.507); 
   background-size: cover;
   height: 500px;
   position: relative;
 }
+
+body{
+    background: whitesmoke;
+
+}
+
 .blog{
   background: black; 
   background-size: cover;
   height: 500px;
   position: relative;
 }
+
+.experiences-container{
+    background: rgba(117, 117, 116, 0.623);
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.projects {
+  background: #a8a7a75e;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
 .profile{
    
   display: inline-block;
@@ -47,6 +55,7 @@ body{
   background-position: left center;
   background-size: cover;
 }
+
 .picture1{
    
   display: inline-block;
@@ -58,6 +67,7 @@ body{
   background-position: left center;
   background-size: cover;
 }
+
 .picture2{
    
   display: inline-block;
@@ -69,6 +79,7 @@ body{
   background-position: center center;
   background-size: cover;
 }
+
 .picture3{
    
   display: inline-block;
