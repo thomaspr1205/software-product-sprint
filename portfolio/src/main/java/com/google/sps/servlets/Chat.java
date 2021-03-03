@@ -7,13 +7,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Handles requests sent to the /hello URL. Try running a server and navigating to /hello! */
-@WebServlet("/chat.html")
+@WebServlet("/chat")
 public class Chat extends HttpServlet {
     private int indexQuestions =0;
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     response.setContentType("text/html;");
-    response.getWriter().println("<h1>Welcome to the chat!</h1>");
     response.getWriter().println(randomQuestion());
     indexQuestions++;    
   }

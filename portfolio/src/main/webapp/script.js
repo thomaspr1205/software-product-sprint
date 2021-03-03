@@ -70,3 +70,10 @@ function onClickLinkedin() {
   function onClickShowBlogSolution() {
     document.getElementById("blog-solution").style.display = "block";
 }
+async function showRandomQuestion() {
+  const responseFromServer = await fetch('/chat');
+  const textFromResponse = await responseFromServer.text();
+
+  const dateContainer = document.getElementById('question-container');
+  dateContainer.innerText = textFromResponse;
+}
