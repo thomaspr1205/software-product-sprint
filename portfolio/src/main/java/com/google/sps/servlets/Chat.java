@@ -17,7 +17,8 @@ public class Chat extends HttpServlet {
     response.getWriter().println(randomQuestion());
     indexQuestions++;    
   }
-  public String randomQuestion(){
+
+public String randomQuestion(){
     String[] questions = {
         "Are there any interesting things your name spells with the letters rearranged?",
         "If you were a potato, what way would you like to be cooked?",
@@ -34,6 +35,5 @@ public class Chat extends HttpServlet {
         return questions[indexQuestions];
     }
     return "I have got no more questions. Your turn to ask!";
-    //const greeting = greetings[Math.floor(Math.random() * greetings.length)];
  }
 }
