@@ -1,5 +1,6 @@
 package com.google.sps.servlets;
 
+import com.google.gson.Gson;
 import java.io.IOException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,30 +10,32 @@ import javax.servlet.http.HttpServletResponse;
 /** Handles requests sent to the /hello URL. Try running a server and navigating to /hello! */
 @WebServlet("/chat")
 public class Chat extends HttpServlet {
-    private int indexQuestions =0;
+
+  String jsonQuestions = convertToJsonUsingGson(randomQuestion());
+
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     response.setContentType("text/html;");
-    response.getWriter().println(randomQuestion());
-    indexQuestions++;    
+    response.getWriter().println(jsonQuestions);
   }
 
-public String randomQuestion(){
+public String[] randomQuestion(){
     String[] questions = {
         "Are there any interesting things your name spells with the letters rearranged?",
         "If you were a potato, what way would you like to be cooked?",
         "Would you go to space if you knew that you could never come back to earth?",
         "Have you ever been mistaken for someone famous?",
         "What animal would you chose to be?",
-        "What is the most embarrassing thing you’ve ever done?",
+        "What is the most embarrassing thing you have ever done?",
         "What is the strangest gift you have ever received?",
         "What kind of reality show would you appear in?",
-        "Which of Snow White’s seven dwarfs describes you best (Bashful, Doc, Dopey, Grumpy, Happy, Sleepy or Sneezy)?",
         "What song describes your life right now?"
     };
-    while(indexQuestions<questions.length){
-        return questions[indexQuestions];
-    }
-    return "I have got no more questions. Your turn to ask!";
+    return questions;
  }
+  private String convertToJsonUsingGson(String[] questions) {
+    Gson gson = new Gson();
+    String jsonQuestions = gson.toJson(questions);
+    return jsonQuestions;
+  }
 }

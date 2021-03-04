@@ -72,8 +72,10 @@ function onClickLinkedin() {
 }
 async function showRandomQuestion() {
   const responseFromServer = await fetch('/chat');
-  const textFromResponse = await responseFromServer.text();
+  const questionList = await responseFromServer.json();
 
-  const dateContainer = document.getElementById('question-container');
-  dateContainer.innerText = textFromResponse;
+  const questionsContainer = document.getElementById('question-container');
+  randomIndex = Math.floor(Math.random() * 9) + 0;  
+  randomQuestion = questionList[randomIndex];    
+  questionsContainer.innerText = randomQuestion;
 }
