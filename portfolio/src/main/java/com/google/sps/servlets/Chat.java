@@ -11,11 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/chat")
 public class Chat extends HttpServlet {
 
-  String jsonQuestions = convertToJsonUsingGson(randomQuestion());
-
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     response.setContentType("text/html;");
+    String jsonQuestions = convertToJsonUsingGson(randomQuestion());
     response.getWriter().println(jsonQuestions);
   }
 
