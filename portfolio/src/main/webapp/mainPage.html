@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+
+<title>Thomas Pena</title>
+<link rel="stylesheet" href="StyleMenu.css" />
+<script src="scriptMainPage.js"></script>
+
+
+<head>
+
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+        <div class="w3-center">
+            <h1 class="w3-xxxlarge w3-animate-bottom">THOMAS PENA</h1>
+            <img src="/images/Pena, Thomas.jpg" class="profile" />
+            <div class="w3-padding-32">
+                <p>
+                    <button onclick="onClickGithub()"><i class="w3-btn w3-xlarge w3-hover-light-grey; fa fa-github"></i></button>
+                    <button onclick="onClickLinkedin()"><i class="w3-btn w3-xlarge w3-hover-light-grey; fa fa-linkedin"></i></button>
+                </p>
+            </div>
+        </div>
+    </header>
+</head>
+
+<button onclick="myAccFunc('showSkills')" class="w3-padding-16 w3-theme w3-button w3-block w3-center" style="font-size:x-large;">Skills</button>
+<div id="showSkills" class="w3-hide">
+    <h2 class="w3-center">My Skills</h2>
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Proficient</h3><br>
+                <i class="devicon-java-plain-wordmark" style="font-size:120px"></i>
+                <p></p>
+                <i class="devicon-cplusplus-plain-wordmark colored" style="font-size:110px"></i>
+                <p></p>
+                <i class="devicon-python-plain-wordmark" style="font-size:120px"></i>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Familiarized</h3><br>
+                <i class="devicon-r-original colored" style="font-size:120px"></i>
+                <p><br></p>
+                <i class="devicon-matlab-plain colored" style="font-size:120px"></i>
+                <p>MATLAB</p>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Learning</h3><br>
+                <i class="devicon-html5-plain-wordmark colored" style="font-size:110px"></i>
+                <p></p>
+                <i class="devicon-css3-plain-wordmark colored" style="font-size:110px"></i>
+                <p></p>
+                <i class="devicon-javascript-plain colored" style="font-size:100px"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<button onclick="myAccFunc('showProjects'); showDivs(1)" class="w3-padding-16 w3-theme w3-button w3-block w3-center" style="font-size:x-large;">Projects</button>
+<div id="showProjects" class="w3-hide">
+    <div class="w3-container">
+        <div class="w3-content" style="max-width:400px;position:relative">
+            <div class="mySlides w3-card" style="width:100%">
+                <h2 class="w3-center">Blackjack – Java</h2>
+                Simplified version of the game Blackjack<br />
+                • Implemented random card drawing, calculation, state tracking, and
+                console input systems<br />
+                • Data types, console I/O, control structures, and libraries<br />
+
+                <img class="w3-animate-opacity" src="/images/blackjack.jpg" style="width:100%">
+            </div>
+            <div class="mySlides w3-card" style="width:100%">
+                <h2 class="w3-center">House Renovation – Python</h2>
+                Determined the number of boxes needed for
+                my parent’s house renovation<br />
+                • Calculated intelligently via final cost several other factors <br />
+                oArea of the room, number of tiles per box, dimensions of each tile,
+                and different brands
+                <img class="w3-animate-opacity" src="/images/houseRenovation.JPG" style="width:100%">
+            </div>
+            <div class="mySlides w3-card" style="width:100%">
+                <h2 class="w3-center">Automated Blinds – C++ | Arduino</h2>
+                Voice-controlled automated blinds <br />
+                • IoT project: Used Adafruit to create an open/close switch, with IFTTT
+                platform implemented the trigger that changes the switch based on
+                voice commands through Google Assistant <br />
+                <button onclick="onClickProject3()" class=" w3-center w3-btn w3-xlarge w3-hover-light-grey; fa fa-play-circle">
+                </button>
+                <div id="project3" style="display: none">
+                    <video width="400" controls>
+                        <source src="/images/blinds.mp4" type="video/mp4">
+                        <source src="/images/blinds.ogg" type="video/ogg">
+                    </video>
+                </div>
+                <img class="w3-animate-opacity" src="/images/blindsDesign.JPG" style="width:100%">
+            </div>
+            <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
+        </div>
+
+
+    </div>
+
+    <div class="w3-container">
+        <hr>
+    </div>
+</div>
+<button onclick="myAccFunc('showExperience')" class="w3-padding-16 w3-theme w3-button w3-block w3-center" style="font-size:x-large;">Experience</button>
+<div id="showExperience" class="w3-hide">
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <img src="/images/santaFe.jpg" style="width:100%" />
+                <h3>Santa Fe College | Gainesville, FL</h3>
+                <p>Summer 2019 – Summer 2020 <br>
+                    Math Tutor<br>
+                    •College Reading & Learning Association (CRLA) Level 1 certified
+                    tutor <br>
+                    •Collaborated with students from various math courses<br>
+                    •Assisted students to create studying strategies while supporting them with classwork
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <img src="/images/sitel.jpg" style=" width:100% ;height:100%" />
+                <h3>SITEL | Bogota, Colombia</h3>
+                <p> [13 weeks] 2019 <br>
+                    Bilingual Call Center Agent<br>
+                    • Agent as a representative of Just Energy Group Inc.<br>
+                    • Evaluated customer’s info to explore solutions while maintaining high-quality service<br>
+                    • Inbound calls sales team: Promoted products and services to customers during calls<br>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<button onclick="myAccFunc('showAboutMe')" class="w3-padding-16 w3-theme w3-button w3-block w3-center" style="font-size:x-large;">About</button>
+<div id="showAboutMe" class="w3-hide">
+    <div class="w3-third">
+        <div class="w3-card w3-container">
+            <img src="/images/Pena, Thomas.jpg" style="width:100%" />
+        </div>
+    </div>
+    <div class="w3-third">
+        <div class="w3-card w3-container">
+            <h2 class="w3-left-align">Who am I?</h2>
+            Hi! I'm Thomas. I'm from Bogota, Colombia
+            and I'm currently studying at the University of Florida.<br />
+            Technology and innovation has always fascinated me that is why I'm
+            majoring in Computer Science!<br />
+            Some fun facts about me: <br />• Oreo lover <br />
+            • I speak three languages<br />
+            • Currently training to run a marathon by the end of this year!
+        </div>
+    </div>
+</div>
+<button onclick="myAccFunc('showContact')" class="w3-padding-16 w3-theme w3-button w3-block w3-center" style="font-size:x-large;">Contact me</button>
+<div id="showContact" class="w3-hide w3-black">
+    <div class="container">
+        <div style="background-color:#27323a">
+
+
+            <label style:="color:white" for="country">Do you want to answer a random question?</label>
+            <button onclick="showRandomQuestion();">
+                Get a question
+            </button>
+            <p id="question-container"></p>
+
+            <form action="/form-handler" method="POST">
+                <label style:="color:white""> Name</label>
+                <input name="name-input" type="text" placeholder="Your name..">
+
+                <label style:="color:white" for="lname">Email</label>
+                <input name="email-input" type="text" placeholder="Your email..">
+                    
+                <label style:="color: white" for="subject">Message</label>
+                <textarea name="message-input" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </div>
+</div>
+<footer class="w3-container" style="background-color: black;">
+    <p style="color:white">Thomas Pena<br>
+        <a href="mailto:thomasfelipepr@gmail.com">thomasfelipepr@gmail.com</a>
+    </p>
+</footer>
+
+</html>
