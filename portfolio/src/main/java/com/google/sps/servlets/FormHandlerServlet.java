@@ -17,15 +17,9 @@ public class FormHandlerServlet extends HttpServlet {
         String email = request.getParameter("email-input");
         String message = request.getParameter("message-input");
 
-
-
-
         // Print the value so you can see it in the server logs.
-        System.out.println("Contact: " + name + ", " + email + ", " + message);
+        System.out.printf("Contact: %s, %s, %s",name,email,message);
 
-        // Write the value to the response so the user can see it.
-        response.getWriter().println("You submitted: " + name + ", " + email + ", " + message);
-
-        response.sendRedirect("http://tpena-sps-spring21.appspot.com/mainPage.html");
+        response.sendRedirect("/mainPage.html");
     }
 }

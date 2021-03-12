@@ -7,14 +7,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
-
 <title>Thomas Pena</title>
 <link rel="stylesheet" href="StyleMenu.css" />
 <script src="scriptMainPage.js"></script>
-
-
 <head>
-
     <header class="w3-container w3-theme w3-padding" id="myHeader">
         <div class="w3-center">
             <h1 class="w3-xxxlarge w3-animate-bottom">THOMAS PENA</h1>
@@ -28,7 +24,6 @@
         </div>
     </header>
 </head>
-
 <button onclick="myAccFunc('showSkills')" class="w3-padding-16 w3-theme w3-button w3-block w3-center" style="font-size:x-large;">Skills</button>
 <div id="showSkills" class="w3-hide">
     <h2 class="w3-center">My Skills</h2>
@@ -43,7 +38,6 @@
                 <i class="devicon-python-plain-wordmark" style="font-size:120px"></i>
             </div>
         </div>
-
         <div class="w3-third">
             <div class="w3-card w3-container" style="min-height:460px">
                 <h3>Familiarized</h3><br>
@@ -53,7 +47,6 @@
                 <p>MATLAB</p>
             </div>
         </div>
-
         <div class="w3-third">
             <div class="w3-card w3-container" style="min-height:460px">
                 <h3>Learning</h3><br>
@@ -76,7 +69,6 @@
                 • Implemented random card drawing, calculation, state tracking, and
                 console input systems<br />
                 • Data types, console I/O, control structures, and libraries<br />
-
                 <img class="w3-animate-opacity" src="/images/blackjack.jpg" style="width:100%">
             </div>
             <div class="mySlides w3-card" style="width:100%">
@@ -107,17 +99,13 @@
             <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
             <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
         </div>
-
-
     </div>
-
     <div class="w3-container">
         <hr>
     </div>
 </div>
 <button onclick="myAccFunc('showExperience')" class="w3-padding-16 w3-theme w3-button w3-block w3-center" style="font-size:x-large;">Experience</button>
 <div id="showExperience" class="w3-hide">
-
     <div class="w3-row-padding w3-center w3-margin-top">
         <div class="w3-third">
             <div class="w3-card w3-container" style="min-height:460px">
@@ -132,7 +120,6 @@
                 </p>
             </div>
         </div>
-
         <div class="w3-third">
             <div class="w3-card w3-container" style="min-height:460px">
                 <img src="/images/sitel.jpg" style=" width:100% ;height:100%" />
@@ -145,7 +132,6 @@
                 </p>
             </div>
         </div>
-
     </div>
 </div>
 <button onclick="myAccFunc('showAboutMe')" class="w3-padding-16 w3-theme w3-button w3-block w3-center" style="font-size:x-large;">About</button>
@@ -172,27 +158,20 @@
 <div id="showContact" class="w3-hide w3-black">
     <div class="container">
         <div style="background-color:#27323a">
-
-
             <label style:="color:white" for="country">Do you want to answer a random question?</label>
             <button onclick="showRandomQuestion();">
                 Get a question
             </button>
             <p id="question-container"></p>
-
-            <form action="/form-handler" method="POST">
+            <form action="/new-task" method="POST">
                 <label style:="color:white""> Name</label>
                 <input name="name-input" type="text" placeholder="Your name..">
-
                 <label style:="color:white" for="lname">Email</label>
                 <input name="email-input" type="text" placeholder="Your email..">
-                    
                 <label style:="color: white" for="subject">Message</label>
                 <textarea name="message-input" placeholder="Write something.." style="height:200px"></textarea>
-
                 <input type="submit" value="Submit">
             </form>
-
         </div>
     </div>
 </div>
@@ -201,5 +180,4 @@
         <a href="mailto:thomasfelipepr@gmail.com">thomasfelipepr@gmail.com</a>
     </p>
 </footer>
-
 </html>

@@ -1,3 +1,5 @@
+var slideIndex = 1;
+
 function onClickGithub() {
     window.open("https://github.com/thomaspr1205");
 }
@@ -20,7 +22,7 @@ async function showRandomQuestion() {
     questionsContainer.innerText = randomQuestion;
 }
 
-// Accordions
+// Accordions, when clicked it opens or close the option selected
 function myAccFunc(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
@@ -29,14 +31,14 @@ function myAccFunc(id) {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-//slideshow
-var slideIndex = 1;
 
+// Slideshow, keeps track of the slide that is being displayed
 function plusDivs(n) {
     slideIndex = slideIndex + n;
     showDivs(slideIndex);
 }
 
+// Allows to view a slide and move to the next and previous slide.
 function showDivs(n) {
     var x = document.getElementsByClassName("mySlides");
     if (n > x.length) {
