@@ -32,6 +32,7 @@ public class Chat extends HttpServlet {
     };
     return questions;
   }
+  
   private String convertToJsonUsingGson(String[] questions) {
     Gson gson = new Gson();
     String jsonQuestions = gson.toJson(questions);
